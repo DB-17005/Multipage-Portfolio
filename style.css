@@ -149,46 +149,207 @@ section{
 .socials a{
   color: black;
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
 @media (max-width: 768px) {
 
+  /* Header / Navigation */
   header {
-    gap: 20px;
+    width: 90%;
+    max-width: 100%;
     padding: 10px 15px;
-    width: 95%;
-  }
-
-  ul {
-    gap: 20px;
+    gap: 15px;
+    box-sizing: border-box;
   }
 
   .logo {
     font-size: 16px;
+    white-space: nowrap;
   }
 
+  ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+
+  /* Sections */
   section {
-    padding: 100px 5%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 5%;
+    overflow: hidden;
   }
 
+
+  /* About Section */
   .about .about-container {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;
     text-align: center;
   }
 
+
+  /* Profile Image */
   img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
+    max-width: 80vw;
+    object-fit: cover;
   }
 
+
+  /* Information */
   .info-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .info-box h1 {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+
+  .info-box h2 {
+    font-size: 22px;
+  }
+
+  .info-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 500px;
+  }
+
+
+  /* Social Icons */
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+
+  /* Buttons */
+  button,
+  .btn {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 480px) {
+
+  header {
+    width: 94%;
+    padding: 8px 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  ul li a {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 70px 6%;
+  }
+
+  img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .info-box h1 {
+    font-size: 30px;
+  }
+
+  .info-box h2 {
+    font-size: 19px;
+  }
+
+  .info-box p {
+    font-size: 14px;
   }
 
   .socials {
-    gap: 40px;
+    gap: 20px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   ========================= */
+
+@media (max-width: 360px) {
+
+  header {
+    width: 96%;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ul {
+    gap: 8px;
+  }
+
+  ul li a {
+    font-size: 11px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .info-box h1 {
+    font-size: 27px;
+  }
+
+  .info-box h2 {
+    font-size: 17px;
+  }
+
+  .info-box p {
+    font-size: 13px;
+  }
+
+  .socials {
+    gap: 15px;
   }
 }
