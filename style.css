@@ -149,3 +149,46 @@ section{
 .socials a{
   color: black;
 }
+@media (max-width: 768px) {
+
+  header {
+    gap: 20px;
+    padding: 10px 15px;
+    width: 95%;
+  }
+
+  ul {
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 100px 5%;
+  }
+
+  .about .about-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .info-box {
+    align-items: center;
+  }
+
+  .info-box h1 {
+    font-size: 40px;
+  }
+
+  .socials {
+    gap: 40px;
+  }
+}
